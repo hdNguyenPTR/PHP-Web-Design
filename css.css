@@ -1,0 +1,209 @@
+/*clear original CSS*/
+body{width:100%;height:auto;margin:0;font-size:12px; padding:0;  font-size:12px; font-family: Helvetica, Verdana, Arial,  sans-serif; color:#444444; text-align: left; background-color:#fff;}
+img{ border:0; margin:0; padding:0}
+form{ margin:0; padding:0}
+
+ul{ margin:0; padding:0; list-style-type:none}
+li{ margin:0; padding:0; list-style-type:none}
+dl{ margin:0; padding:0; list-style-type:none}
+dt{ margin:0; padding:0; list-style-type:none}
+dd{ margin:0; padding:0; list-style-type:none}
+
+p{ margin:0; padding:0}
+input{ margin:0; padding:0; vertical-align:middle}
+select{ margin:0; padding:0; vertical-align:middle}
+
+a, a:link { color: #848484; text-decoration: none; }
+a:visited {}
+a:active, a:hover { text-decoration: none; color: #81b542; }
+a:focus { outline: none; }
+span { margin:0; padding:0;}
+h1,h2,h3 { margin:0; padding:0;}
+h2 {font-size:14px; font-weight:normal;}
+ul,li {list-style-type:none; text-transform:capitalize;}
+dl,dt,dd {list-style-type:none; text-transform:capitalize; margin:0; padding:0;}
+.clear {clear:both; *display:inline;/*IE only*/}
+button {border:0 none;background-color:transparent;cursor:pointer}
+tr,td,th {margin: 0; padding: 0; list-style-type:none; text-decoration: none; text-align:left; font-size: 18px;}
+tr{height: 40px;}
+th{width: 140px;}
+input{ height: 28px;}
+.fl{float: left}
+.fr{float: right}
+.h30{height: 30px;}
+.cg{color: #81b542}
+
+/*menu*/
+.menu-title{
+    float: left;
+    padding-bottom: 3px;
+}
+
+.menu{
+    position: absolute;
+    left:130px;
+}
+
+.menu-item {
+    display:block;
+    font-size:16px;
+    color: #848484;
+    width:200px;
+    height: 38px;
+    line-height: 38px;
+    background-color: #fafafa;
+    text-indent: 20px;
+    box-shadow: inset 4px 0 3px #d3d8cd;
+    margin-bottom: 1px;
+}
+
+.menu2{
+    left: 200px;
+    position: absolute;
+}
+.menu-unit{
+    display: block;
+    font-size: 14px;
+    color: #848484;
+    background-color: #fafafa;
+    width:130px;
+    height: 28px;
+    line-height: 28px;
+    text-indent:10px;
+    margin-bottom: 1px;
+    box-shadow: inset 2px 0 2px #d3d8cd;
+}
+
+.menu-unit a{
+    color: #848484;
+}
+
+.menu-arrow{
+    background-image: url('images/arrow.png');
+    background-repeat: no-repeat;
+    background-position: 250px;
+}
+
+/*detail*/
+.table1_m{
+    background-color: #fafafa;
+    height: 30px;
+}
+
+.table1_th{
+    color: #848484;
+    font-size:16px;
+    font-weight: normal;
+    width: 160px;
+    text-indent: 20px;
+    padding-top:10px;
+}
+
+.table1_td{
+    font-size: 22px;
+    color:#4d4d4d;
+    width:260px;
+    text-indent: 10px;
+    padding-top: 10px;
+}
+
+.table1_tr{
+    font-size: 22px;
+    color:#4d4d4d;
+    width:260px;
+    text-indent: 10px;
+    padding-top: 20px;
+}
+
+
+.table1_th2{
+    color: #848484;
+    font-size:16px;
+    font-weight: normal;
+    text-indent: 20px;
+}
+
+.table1_td2{
+    color: #ff002b; width:260px;
+}
+
+.table1_dollar{
+    font-size: 14px;
+    float: left;
+    padding-top: 7px;
+    text-indent: 10px;
+}
+
+.table1_prize{
+    font-size: 24px;
+    float:left;
+    text-indent:5px
+}
+
+.table2_th{
+    font-size: 14px;
+    color: #999999;
+    text-indent: 20px;
+    font-weight: normal;
+}
+
+.table2_return{
+    color: #383838;
+    font-size: 16px;
+}
+
+.enter_no{
+    border: #b0b0b0 1px solid;
+    width: 80px;
+    height: 36px;
+}
+
+/*shopping cart*/
+.cart_header{
+    font-size: 16px;
+    color: #797979;
+    text-align: center;
+    border-bottom: #b5b5b5 1px solid;
+}
+
+.cart_cont{
+    font-size: 14px;
+    color: #4d4d4d;
+    text-align: center;
+    font-weight: normal;
+}
+
+.button_grey{
+    width: 90px;
+    height: 30px;
+    background-color: #f5f5f5;
+    border: 1px solid #b0b0b0;
+    color: #909090;
+    font-size: 16px;
+    border-radius: 5px;
+    margin: 20px 10px 0 0;
+}
+
+.button_checkout{
+    width: 170px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #e35e00;
+    font-size: 22px;
+    border: none;
+    color: white;
+    margin: 10px 0 0 470px;
+}
+
+
+
+/*checkout*/
+#checkout_table td{
+    font-size: 14px;
+    text-align: right;
+    padding-right: 10px;
+}
+
+#checkout_table tr{
+    height: 30px;
+}

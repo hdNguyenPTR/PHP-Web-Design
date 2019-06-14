@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="css.css">
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/"></script>
+    <script type="text/javascript">
+        //show and hide menu level2
+        function showMenu1(obj){
+            $(obj).parent().find(".menu").css("display","block");
+            $('#frozen').attr('src','images/frozenfood_h.png');
+        }
+        function hideMenu1(obj){
+            $(obj).parent().find(".menu").css("display","none");
+            $('#frozen').attr('src','images/frozenfood.png');
+        }
+        function showMenu2(obj){
+            $(obj).parent().find(".menu").css("display","block");
+            $('#home').attr('src','images/homehealth_h.png');
+        }
+        function hideMenu2(obj){
+            $(obj).parent().find(".menu").css("display","none");
+            $('#home').attr('src','images/homehealth.png');
+        }
+        function showMenu3(obj){
+            $(obj).parent().find(".menu").css("display","block");
+            $('#fresh').attr('src','images/freshfood_h.png');
+        }
+        function hideMenu3(obj){
+            $(obj).parent().find(".menu").css("display","none");
+            $('#fresh').attr('src','images/freshfood.png');
+        }
+        function showMenu4(obj){
+            $(obj).parent().find(".menu").css("display","block");
+            $('#beverage').attr('src','images/beverages_h.png');
+        }
+        function hideMenu4(obj){
+            $(obj).parent().find(".menu").css("display","none");
+            $('#beverage').attr('src','images/beverages.png');
+        }
+        function showMenu5(obj){
+            $(obj).parent().find(".menu").css("display","block");
+            $('#pet').attr('src','images/petfood_h.png');
+        }
+        function hideMenu5(obj){
+            $(obj).parent().find(".menu").css("display","none");
+            $('#pet').attr('src','images/petfood.png');
+        }
+        //show and hide item
+        function showItem(obj){
+            $(obj).parent().find("ul").css("display","block");
+        }
+        function hideItem(obj){
+            $(obj).parent().find("ul").css("display","none");
+        }
+    </script>
+
+    </head>
+<body style="background-color: #47EEFF; height: 100%">
+    <header>
+        <a onclick="window.location.reload();"><img src="images/logo.png" alt="TitleLogo"></a>
+    </header>
+    <ul>
+        <li style="overflow: hidden;" >
+            <img class="menu-title" id="frozen" src="images/frozenfood.png" onmouseover="showMenu1(this)" onmouseout="hideMenu1(this)" alt="FrozenFood">
+                <ul class="menu" style="display: none;" onmouseover="showMenu1(this)" onmouseout="hideMenu1(this)">
+                    <li style="overflow: hidden;">
+                        <a class="menu-item fl menu-arrow" onmouseover="showItem(this)" onmouseout="hideItem(this)">Fish Finger</a>
+                        <ul class="menu2" style="display: none" onmouseover="showItem(this)" onmouseout="hideItem(this)">
+                            <li>
+                                <a class="menu-unit"  href="detail.php?product_id=1000" target="detail">500 Gram</a>
+                            </li>
+                            <li>
+                                <a class="menu-unit" href="detail.php?product_id=1001" target="detail">1000 Gram</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="menu-item" href="detail.php?product_id=1002" target="detail">Hamburger Patties </a>
+                    </li>
+                    <li>
+                        <a class="menu-item" href="detail.php?product_id=1003" target="detail">Shelled Prawns</a>
+                    </li>
+                    <li style="overflow: hidden;">
+                        <a class="menu-item fl menu-arrow" onmouseover="showItem(this)" onmouseout="hideItem(this)">Tub Ice Cream</a>
+                        <ul class="menu2" style="display: none" onmouseover="showItem(this)" onmouseout="hideItem(this)">
+                            <li>
+                                <a class="menu-unit" href="detail.php?product_id=1004" target="detail">1 Litre</a>
+                            </li>
+                            <li>
+                                <a class="menu-unit" href="detail.php?product_id=1005" target="detail">2 Litre</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+        </li>
+        <li style="overflow: hidden">
+            <img class="menu-title" src="images/homehealth.png" id="home" onmouseover="showMenu2(this)" onmouseout="hideMenu2(this)">
+            <ul class="menu" style="display: none;" onmouseover="showMenu2(this)" onmouseout="hideMenu2(this)">
+                <li style="overflow: hidden;">
+                    <a class="menu-item fl menu-arrow" onmouseover="showItem(this)" onmouseout="hideItem(this)">Panadol</a>
+                    <ul class="menu2" style="display: none" onmouseover="showItem(this)" onmouseout="hideItem(this)">
+                        <li>
+                            <a class="menu-unit" href="detail.php?product_id=2000" target="detail">Pack 24</a>
+                        </li>
+                        <li>
+                            <a class="menu-unit" href="detail.php?product_id=2001" target="detail">Bottle 50</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="menu-item" href="detail.php?product_id=2002" target="detail">Bath Soap</a>
+                </li>
+                <li style="overflow:hidden;">
+                    <a class="menu-item fl menu-arrow" onmouseover="showItem(this)" onmouseout="hideItem(this)">Garbage Bags</a>
+                    <ul class="menu2" style="display: none" onmouseover="showItem(this)" onmouseout="hideItem(this)">
+                        <li>
+                            <a class="menu-unit" href="detail.php?product_id=2003" target="detail">Small (Pack 10)</a>
+                        </li>
+                        <li>
+                            <a class="menu-unit" href="detail.php?product_id=2004" target="detail">Large (Pack 50)</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="menu-item" href="detail.php?product_id=2005" target="detail">Washing Powder</a>
+                </li>
+                <li>
+                    <a class="menu-item" href="detail.php?product_id=2006" target="detail">Laundry Bleach</a>
+                </li>
+            </ul>
+        </li>
+        <li style="overflow: hidden;">
+            <img class="menu-title" src="images/freshfood.png" id="fresh" onmouseover="showMenu3(this)" onmouseout="hideMenu3(this)">
+            <ul class="menu" style="display: none;" onmouseover="showMenu3(this)" onmouseout="hideMenu3(this)">
+                <li style="overflow: hidden">
+                    <a class="menu-item fl menu-arrow" onmouseover="showItem(this)" onmouseout="hideItem(this)">Cheddar Cheese</a>
+                    <ul class="menu2" style="display: none" onmouseover="showItem(this)" onmouseout="hideItem(this)">
+                        <li>
+                            <a class="menu-unit" href="detail.php?product_id=3000" target="detail">500 Gram</a>
+                        </li>
+                        <li>
+                            <a class="menu-unit" href="detail.php?product_id=3001" target="detail">1000 Gram</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="menu-item" href="detail.php?product_id=3002" target="detail">T'Bone Steak</a>
+                </li>
+                <li>
+                    <a class="menu-item" href="detail.php?product_id=3003" target="detail">Navel Orange</a>
+                </li>
+                <li>
+                    <a class="menu-item" href="detail.php?product_id=3004" target="detail">Bananas</a>
+                </li>
+                <li>
+                    <a class="menu-item" href="detail.php?product_id=3005" target="detail">Peaches</a>
+                </li>
+                <li>
+                    <a class="menu-item" href="detail.php?product_id=3006" target="detail">Grapes</a>
+                </li>
+                <li>
+                    <a class="menu-item" href="detail.php?product_id=3007" target="detail">Apples</a>
+                </li>
+            </ul>
+        </li>
+        <li style="overflow: hidden">
+            <img class="menu-title" src="images/beverages.png" id="beverage" onmouseover="showMenu4(this)" onmouseout="hideMenu4(this)">
+            <ul class="menu" style="display: none;" onmouseover="showMenu4(this)" onmouseout="hideMenu4(this)">
+                <li style="overflow: hidden">
+                    <a class="menu-item fl menu-arrow" onmouseover="showItem(this)" onmouseout="hideItem(this)">Earl Grey Tea Bags</a>
+                    <ul class="menu2" style="display: none" onmouseover="showItem(this)" onmouseout="hideItem(this)">
+                        <li>
+                            <a class="menu-unit" href="detail.php?product_id=4000" target="detail">Pack 25</a>
+                        </li>
+                        <li>
+                            <a class="menu-unit" href="detail.php?product_id=4001" target="detail">Pack 100</a>
+                        </li>
+                        <li>
+                            <a class="menu-unit" href="detail.php?product_id=4002" target="detail">Pack 200</a>
+                        </li>
+                    </ul>
+
+                </li>
+                <li style="overflow: hidden">
+                    <a class="menu-item fl menu-arrow" onmouseover="showItem(this)" onmouseout="hideItem(this)">Instant Coffee</a>
+                    <ul class="menu2" style="display: none" onmouseover="showItem(this)" onmouseout="hideItem(this)">
+                        <li>
+                            <a class="menu-unit" href="detail.php?product_id=4003" target="detail">200 Gram</a>
+                        </li>
+                        <li>
+                            <a class="menu-unit" href="detail.php?product_id=4004" target="detail">500 Gram</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="menu-item" href="detail.php?product_id=4005" target="detail">Chocolate Bar</a>
+                </li>
+            </ul>
+        </li>
+        <li style="overflow: hidden;">
+            <img class="menu-title" src="images/petfood.png" id="pet" onmouseover="showMenu5(this)" onmouseout="hideMenu5(this)">
+            <ul class="menu"style="display: none;" onmouseover="showMenu5(this)" onmouseout="hideMenu5(this)">
+                <li style="overflow: hidden;">
+                    <a class="menu-item fl menu-arrow" onmouseover="showItem(this)" onmouseout="hideItem(this)">Dry Dog Food</a>
+                    <ul class="menu2" style="display: none" onmouseover="showItem(this)" onmouseout="hideItem(this)">
+                        <li>
+                            <a class="menu-unit" href="detail.php?product_id=5000" target="detail">5kg Pack</a>
+                        </li>
+                        <li>
+                            <a class="menu-unit" href="detail.php?product_id=5001" target="detail">1kg Pack</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="menu-item" href="detail.php?product_id=5002" target="detail">Bird Food</a>
+                </li>
+                <li>
+                    <a class="menu-item" href="detail.php?product_id=5003" target="detail">Cat Food</a>
+                </li>
+                <li>
+                    <a class="menu-item" href="detail.php?product_id=5004" target="detail">Fish Food</a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>
+<!--The icon in the menu belongs to http://www.iconfont.cn-->
+
